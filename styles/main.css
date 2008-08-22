@@ -1,0 +1,176 @@
+/*
+-----------------------------------------------
+styles for procsstechniques.com
+author: dan rubin
+edited: 2008-08-22
+----------------------------------------------- */
+
+/* remember to remove any resets not needed for this design */
+@import url("reset.css");
+
+/* math: it's what's for dinner */
+body { font-size:100%; }
+h1 { font-size:2.25em;  /* 16x2.25=36 */ }
+h2 { font-size:1.5em;   /* 16x1.5=24 */ }
+h3 { font-size:1.125em; /* 16x1.125=18 */ }
+h4 { font-size:0.875em; /* 16x0.875=14 */ }
+p  { font-size:0.75em;  /* 16x0.75=12 */ }
+
+/* main styles */
+body {
+    background:#070300 url(images/bg-body.jpg) no-repeat;
+    color:#906045;
+    font-family:"helvetica neue",helvetica,arial,sans-serif;
+}
+a {
+	text-decoration:none;
+}
+#wrapper {
+	position:absolute;
+	width:100%;
+	height:100%;
+	min-width:790px;
+	max-width:1300px;
+	min-height:490px;
+}
+#header {
+	position:absolute;
+	left:38px;
+	top:89px;
+	/*z-index:10;*/
+	width:535px;
+	height:230px;
+	background:url(images/bg-header.png) no-repeat;
+}
+#header img {
+	width:100%;
+	height:100%;
+}
+
+/* these styles help make the image map function - it's not the prettiest solution, and requires javascript, but it gets the job done - in the real world, sometimes you have to do ugly things... */
+
+/* first, we hide the text version: */
+.hidden {
+	position:absolute;/* this makes sure they don't take up space while invisible */
+	text-indent:-9999px;
+}
+/* and then the styles that position the background image along with the javascript: */
+.danrubin, .ianlloyd, .jeffcroft {
+	background:url(images/bg-header-hover.png) no-repeat;
+}
+.danrubin { background-position:0 -690px; }
+.ianlloyd { background-position:0 -460px; }
+.jeffcroft { background-position:0 -230px; }
+
+/* and that's it! :) */
+
+/* mini-nav on the right */
+#sidebar {
+	position:absolute;
+	right:0;
+	width:28%;
+	min-width:150px;
+	height:100%;
+	background:url(images/bg-sidebar-wide.png) repeat-y 90px 0;
+}
+#sidebar li#nav-buy { margin-top:86px; }
+#sidebar li a {
+	display:block;
+	width:150px;
+	height:34px;
+	margin-bottom:2px;
+	background-image:url(images/nav-matrix.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+}
+li#nav-buy a { background-position:0 0; }
+li#nav-buy a:hover { background-position:-150px 0; }
+li#nav-toc a { background-position:0 -34px; }
+li#nav-toc a:hover { background-position:-150px -34px; }
+li#nav-sample a { background-position:0 -68px; }
+li#nav-sample a:hover { background-position:-150px -68px; }
+li#nav-example a { background-position:0 -102px; }
+li#nav-example a:hover { background-position:-150px -102px; }
+
+#footer {
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:160px;
+	background:url(images/bg-footer-alt.png) repeat-x;
+}
+#footer h2 {
+	width:256px;
+	height:11px;
+	margin:20px 0 0 40px;
+	background:url(images/hdr-otherbooks.png) no-repeat;
+	text-indent:-9999px;
+}
+#footer h3 {
+	margin-left:62px;
+	font-size:11px;
+	line-height:11px;
+}
+#footer h3 a {
+	color:#fa9c20;
+}
+#footer ul {
+	margin:10px 0 0 40px;
+	min-width:640px;
+}
+#footer li {
+	position:relative;
+	float:left;
+	width:155px;
+	height:60px;
+	margin-right:15px;
+}
+#footer li.last { width:190px; }
+#footer li img {
+	position:absolute;
+	left:0;
+	top:-3px;
+	opacity:.8;
+	padding:1px;
+	border:3px solid #492719;
+}
+#footer li:hover img { opacity:1;border-color:#5a3b29; }
+#footer li .buylink {
+	position:absolute;
+	bottom:0;
+	margin-left:62px;
+	color:#906045;
+	font-size:10px;
+	font-weight:bold;
+	border-bottom:2px solid transparent;
+}
+#footer li:hover .buylink {
+	border-color:#402719;
+}
+#footer li:hover .buylink:hover,
+#footer li .buylink:hover {
+	border-bottom-color:#5a3b29;
+}
+#copyright {
+	position:absolute;
+	left:40px;
+	bottom:25px;
+	top:117px;
+	padding-left:100px;
+	padding-right:20px;
+	background:url(images/logo-apress.png) no-repeat;
+	color:#4d281a;
+	font-size:9px;
+	font-weight:bold;
+	line-height:16px;
+	text-transform:uppercase;
+	/*white-space:nowrap;*/
+}
+#copyright a {
+	color:#4d281a;
+}
+#copyright a:hover {
+	color:#653929;
+	border-bottom:2px solid #381c11;
+}
