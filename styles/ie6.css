@@ -2,9 +2,38 @@
 -----------------------------------------------
 procsstechniques.com IE6 styles
 author: dan rubin
-edited: 2008-08-22
+edited: 2008-08-23
 ----------------------------------------------- */
-
+html {
+    overflow:hidden;
+}
+#body {
+    width:100%;
+    height:100%;
+}
+#wrapper {
+    position:static;
+}
 #sidebar {
-    background-image: none;
+    height:4000px;
+    background-image:url(images/bg-sidebar-ie.png);
+    z-index:10;
+}
+#sidebar li,
+#sidebar li a { line-height:34px; }
+#sidebar li a {
+    background-image:url(images/nav-matrix-ie.png);
+}
+#footer {
+    background-color:#070300;
+    background-image:none;
+}
+#footer h2 {
+    background-image:url(images/hdr-otherbooks-ie.png);
+}
+#footer ul {
+    margin-top:0;
+}
+#copyright {
+    background-image:url(images/logo-apress-ie.png);
 }

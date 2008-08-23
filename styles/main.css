@@ -2,7 +2,7 @@
 -----------------------------------------------
 styles for procsstechniques.com
 author: dan rubin
-edited: 2008-08-22
+edited: 2008-08-23
 ----------------------------------------------- */
 
 /* remember to remove any resets not needed for this design */
@@ -71,14 +71,14 @@ a {
 	width:28%;
 	min-width:150px;
 	height:100%;
-	background:url(images/bg-sidebar-wide.png) repeat-y 90px 0;
+	background:url(images/bg-sidebar.png) repeat-y 90px 0;
 }
 #sidebar li#nav-buy { margin-top:86px; }
+#sidebar li { margin-bottom:2px; }
 #sidebar li a {
 	display:block;
 	width:150px;
 	height:34px;
-	margin-bottom:2px;
 	background-image:url(images/nav-matrix.png);
 	background-repeat:no-repeat;
 	text-indent:-9999px;
@@ -98,7 +98,7 @@ li#nav-example a:hover { background-position:-150px -102px; }
 	bottom:0;
 	width:100%;
 	height:160px;
-	background:url(images/bg-footer-alt.png) repeat-x;
+	background:url(images/bg-footer.png) repeat-x;
 }
 #footer h2 {
 	width:256px;
